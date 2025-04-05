@@ -1,0 +1,34 @@
+.post-comment-update-btn,
+.post-comment-delete-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-comment-delete-btn{
+    color : #ff55aa;
+}
+
+.post-comment-update-btn{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.post-comment-update-btn:hover{
+    background-color: #f0f0f0;
+}
+
+.post-comment-delete-btn:hover {
+    background-color: #f0f0f0; /* hover 시 배경색 */
+}
+
+.post-comment-delete-btn {
+    color: red; /* 삭제 버튼 색상 */
+}
+
+.post-comment-delete-btn:hover {
+    background-color: #ffe6e6; /* hover 시 배경색 */
+}

@@ -1,0 +1,19 @@
+.duration-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-button.selected {
+    background-color:  #FF55AA; /* or any other color you want when selected */
+    border: 1px solid #FF55AA;
+}

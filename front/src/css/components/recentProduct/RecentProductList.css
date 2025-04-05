@@ -1,0 +1,79 @@
+#recentProductList-container-haveSideNavigation{
+    padding-bottom: 50px;
+    margin: 18px 18px 0px 80px;
+}
+
+#recentProductList-container-notHaveSideNavigation{
+    padding-bottom: 20px;
+}
+
+.recentProductList-head{
+    justify-content: space-between;
+    letter-spacing: -1.8px;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    /* font-size: 0.8rem; */
+    align-items: center;
+    display: flex;
+}
+
+.see-more-product{
+    letter-spacing: 0.1px;
+    font-size: 11px;
+    border: 1px solid #cdcdcd;
+    padding: 5px 11px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.see-more-product:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.new-product{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    letter-spacing: -1.8px;
+}
+
+.recentProductList-body{
+    display: grid;
+    /*grid-template-rows: 310px; !* 행의 높이를 310px로 고정 *!*/
+    grid-template-columns: repeat(4, 1fr);  /*한줄에 4개의 auction이 display됨 */
+    grid-gap: 18px;
+    /*margin: 18px;*/
+    width: 100%;
+}
+
+
+/*큰화면 데스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용)*/
+@media (max-width: 1200px) {
+    .recentProductList-body {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*테스크탑 (가로 해상도가 992px 보다 작은 화면에 적용)*/
+@media (max-width: 992px) {
+    .recentProductList-body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용)*/
+@media (max-width: 768px) {
+    .recentProductList-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*가로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용)*/
+@media (max-width: 576px) {
+    .recentProductList-body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

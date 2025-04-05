@@ -1,0 +1,111 @@
+.recommendAuction-list-container {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recommendAuction-item {
+    flex-direction: column;
+    width: inherit;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recommendAuction-thumbnail {
+    height: 114px;
+    /* width: 300px; */
+    border-radius: 20px;
+    position: relative;
+}
+
+.recommendAuction-thumbnail img {
+    width: 100%;
+    /* width: inherit; */
+    height: inherit;
+    object-fit: cover;
+}
+
+.expired-overlay {
+    border-radius: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.recommendAuction-details {
+    font-size: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendAuction-title {
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.recommendAuction-description {
+    color: #666;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.recommendAuction-info {
+    display: flex;
+    flex-direction: column;
+    color: #999;
+}
+
+.recommendAuction-highestBidAmount {
+    white-space: nowrap;
+}
+
+.recommendAuction-bidEndTime{
+    white-space: nowrap;
+}
+
+.loading-indicator,
+.no-more-items {
+    text-align: center;
+    font-size: 11px;
+    color: black;
+    padding: 16px 0;
+}
+
+/* 미디어 쿼리로 border 제거 */
+@media (max-width: 1200px) {
+    .recommendAuction-list-container{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .recommendAuction-item{
+        flex-direction: column;
+    }
+
+    .recommendAuction-thumbnail{
+        width: 100%;
+    }
+
+    .recommendAuction-thumbnail img{
+        width: 100%;
+    }
+}
+

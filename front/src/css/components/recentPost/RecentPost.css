@@ -1,0 +1,90 @@
+a {
+    text-decoration: none;
+    color:black;
+}
+
+#post-container{
+    padding: 20px 20px;
+    border: 1px solid #e6e7e8;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.post-title-content-image{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    height: 100px;
+}
+
+.post-title{
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.post-content{
+    color: #9b9ba0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.post-metadata {
+    color:#606060;
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    align-items: center;
+}
+
+.post-title-content {
+    width: 70%;
+    flex-grow: 1; /* 텍스트가 남은 공간을 차지하도록 설정 */
+}
+
+.postImage-block {
+    position: relative;
+    /*width: 100%;*/
+    /*height: 180px;*/
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.post-image  {
+    border-radius: 8px;
+    display: flex;
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.post-comment-count{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.auction-detail-block{
+    text-align: left;
+}
+
+/* 이미지가 없을 경우 텍스트가 전체 너비를 차지하도록 */
+.post-title-content-image.no-image .post-title-content {
+    width: 100%; /* 이미지가 없을 때는 전체 너비 사용 */
+}
+
+
+
+
+
+
+

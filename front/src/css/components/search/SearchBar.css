@@ -1,0 +1,29 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 450px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 400px;
+}
+
+/* 미디어 쿼리로 border 제거 */
+@media (max-width: 1200px) {
+    .search-container {
+        width: fit-content;
+        border: none; /* border 제거 */
+        background-color: transparent; /* 배경색 투명하게 설정 */
+    }
+
+    .search-input {
+        display: none; /* 검색 입력창 숨김 */
+    }
+}

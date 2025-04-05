@@ -1,0 +1,35 @@
+.product-finishSell-btn,
+.product-update-btn,
+.product-delete-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product-finishSell-btn{
+    color : #ff55aa;
+}
+
+.product-update-btn{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.product-finishSell-btn:hover{
+    background-color: #f0f0f0;
+}
+
+.product-update-btn:hover {
+    background-color: #f0f0f0; /* hover 시 배경색 */
+}
+
+.product-delete-btn {
+    color: red; /* 삭제 버튼 색상 */
+}
+
+.product-delete-btn:hover {
+    background-color: #ffe6e6; /* hover 시 배경색 */
+}

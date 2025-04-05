@@ -1,0 +1,233 @@
+.auction-detail-container {
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.auction-detail-left{
+    display: flex;
+    width:80%;
+    flex-direction: column;
+}
+
+/*------------ 왼족 acution Detail css ----------------------------*/
+.auction-details-contents-left{
+    width: 100%;
+}
+
+.auction--detailthumbnail {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.auction-detail-thumbnail img {
+    border-radius: 8px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    /* width: 100%; */
+    /* height: 200px; */
+}
+
+.auction-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.auction-details-contents{
+    gap: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.auction-detail-title {
+    padding-bottom: 13px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.auction-start-end-time-highestBidAmount{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0 0 4px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #929294;
+    vertical-align: top;
+    letter-spacing: -0.2px;
+    max-height: 999999px;
+}
+
+.start-end-time-container{
+    display: flex;
+    gap: 20px;
+}
+
+.start-time-term{
+    letter-spacing: -0.4px;
+}
+
+.end-time-term{
+    letter-spacing: -0.4px;
+}
+
+.auction-start-end-time span:not(:last-child)::after {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 0px 4px;
+    border-radius: 1.5px;
+    background-color: #e6e6ea;
+    vertical-align: 3px;
+    content: '';
+}
+
+.auction-nickname {
+    font-weight: 300;
+    color: #888;
+}
+
+
+.auction-highestBidAmount{
+    display : flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: #929294;
+    vertical-align: top;
+    letter-spacing: -0.2px;
+    max-height: 999999px;
+}
+
+.amount{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff69b4;
+}
+
+.refresh-currentHighestBidAmount{
+    padding: 5px; /* 버튼 여유 공간 */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4; /* 버튼 색상 */
+    color: white;
+    cursor: pointer;
+    font-size: 1em; /* 버튼 폰트 크기 */
+    transition: background-color 0.3s, transform 0.1s; /* 부드러운 효과 */
+}
+
+.auction-details-contents-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.auction-description-content {
+    font-weight: 300;
+    /* padding: 0px 20px; */
+    font-size: 16px;
+    line-height: 3;
+}
+
+.auction-description-content img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.auction-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auction-timer-container {
+    margin-bottom: 30px;
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+.auction-participate-button {
+    border-radius: 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 배경색 변화 효과 */
+}
+
+.auction-participate-button:hover {
+    background-color: #db5a9e; /* 마우스 오버 시 색상 변화 */
+}
+
+.auction-participate-button.disabled {
+    background-color: #f2f2f2;
+    color: #999;
+    cursor: not-allowed;
+    border-color: #ccc;
+    opacity: 0.6;
+}
+
+
+.auction-comments {
+    margin-top: 60px;
+}
+
+/* 미디어 쿼리로 border 제거 */
+@media (max-width: 1200px) {
+    .auction-comments{
+        display: none;
+    }
+
+    .auction-detail-bottom-container{
+        margin-bottom: 60px;
+    }
+
+    .auction-detail-container{
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .auction-detail-left{
+        width: 100%;
+    }
+
+    .auction-details-contents{
+        display: block;
+    }
+
+    .start-end-time-container{
+        display: block;
+    }
+
+    .auction-start-end-time-highestBidAmount{
+        display: block;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .auction-highestBidAmount{
+        padding-top: 16px;
+    }
+
+    .auction-nickname{
+        padding-bottom: 20px;
+    }
+
+}
+

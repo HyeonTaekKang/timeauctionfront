@@ -1,0 +1,148 @@
+a {
+    text-decoration: none;
+    color:black;
+}
+
+p{
+    margin: 0;
+}
+
+#auction-block{
+    height: 100%;
+    overflow: hidden;
+}
+
+/*.auction-thumbnail{*/
+/*    width:100%;*/
+/*    height: 180px;*/
+/*    border-radius: 15px;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.auction-thumbnail {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 180px;*/
+/*    border-radius: 15px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.auction-thumbnail img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.auction-thumbnail:hover img {*/
+/*    transform: scale(1.2); !* Increase the scale value for a stronger zoom effect *!*/
+/*}*/
+
+.auction-thumbnail-block {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*.auction-thumbnail-block{*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+.auction-thumbnail  {
+    position: relative;
+    /*max-width: 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.auction-thumbnail.expired {
+    filter: brightness(0.8);
+}
+
+.expired-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.auction-detail-block{
+    text-align: left;
+}
+
+.auction-currentHighestAmount-block{
+    padding:3px;
+}
+
+.auction-title{
+    color: #555;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.auctionbid-count{
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+.user-Info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end-label {
+    color: #000;
+    margin-right: 5px;
+}
+
+.end-time {
+    color: #989898;
+    margin-left: 5px;
+}
+
+.seller-info {
+    display: flex;
+    align-items: center;
+}
+
+.seller-label {
+    color: #666;
+    margin-right: 5px;
+}
+
+.user-nickName {
+    font-weight: bold;
+}
+
+.auction-currentHighestAmount{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #FF55AA;
+}
+
+
+

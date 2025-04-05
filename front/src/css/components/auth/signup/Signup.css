@@ -1,0 +1,67 @@
+.sign-up-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sign-up-form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px; /* 제목 크기 */
+    color: #333; /* 제목 색상 */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* 라벨을 굵게 */
+    color: #555; /* 라벨 색상 */
+}
+
+.signup-input {
+    width: 100%; /* 너비 100% */
+    padding: 12px; /* 패딩 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* 테두리 색상 변경 시 부드러운 전환 효과 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+}
+
+.signup-input:focus {
+    border-color: #ff55aa; /* 포커스 시 테두리 색상 */
+    outline: none; /* 기본 outline 제거 */
+}
+
+.signup-submit-button {
+    width: 100%;
+    padding: 12px; /* 버튼 패딩 */
+    background-color: #ff55aa; /* 배경색 */
+    color: white; /* 글자색 */
+    border: none; /* 테두리 없음 */
+    border-radius: 5px; /* 둥근 모서리 */
+    cursor: pointer; /* 커서 모양 변경 */
+    font-size: 16px; /* 글자 크기 */
+    transition: background-color 0.3s; /* 배경색 변경 시 부드러운 전환 효과 */
+}
+
+.signup-submit-button:hover {
+    background-color: #ff69b4; /* hover 시 배경색 변경 */
+}
+
+.error {
+    border-color: red; /* 에러 발생 시 테두리 색상 변경 */
+}
+
+.error-text {
+    color: red; /* 에러 메시지 색상 */
+    font-size: 0.8em; /* 에러 메시지 크기 */
+}

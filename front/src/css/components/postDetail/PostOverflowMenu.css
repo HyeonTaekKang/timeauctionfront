@@ -1,0 +1,35 @@
+
+.post-update-btn,
+.post-delete-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-delete-btn{
+    color : #ff55aa;
+}
+
+.post-update-btn{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.post-update-btn:hover{
+    background-color: #f0f0f0;
+}
+
+.post-delete-btn:hover {
+    background-color: #f0f0f0; /* hover 시 배경색 */
+}
+
+.post-delete-btn {
+    color: red; /* 삭제 버튼 색상 */
+}
+
+.post-delete-btn:hover {
+    background-color: #ffe6e6; /* hover 시 배경색 */
+}

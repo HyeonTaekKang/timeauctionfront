@@ -1,0 +1,69 @@
+#userAuctionTicketInfo-dropDown {
+    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-weight: 400;
+    width: 240px;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    border-radius: 0.6rem;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.userAuctionTicketInfo-dropDown-haveTicket{
+    padding: 20px;
+}
+
+.userAuctionTicketInfo-dropDown-date{
+    padding: 0 20px 10px;
+}
+
+#userAuctionTicketInfo-dropDown-noHave{
+    gap: 10px;
+    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-weight: 400;
+    width: 240px;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    border-radius: 0.6rem;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0.5px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.ticketPurchase-link{
+    border: 1px solid black;
+    padding: 7px;
+    color : #ff55aa;
+}
+
+/* 모바일 스타일 */
+@media (max-width: 1200px) {
+    #userAuctionTicketInfo-dropDown {
+        position: inherit;
+        width: inherit;
+        width: inherit;
+        top: auto;
+        right: auto;
+    }
+
+    #userAuctionTicketInfo-dropDown-noHave{
+        position: inherit;
+        width: inherit;
+        width: inherit;
+        top: auto;
+        right: auto;
+
+    }
+
+}

@@ -1,0 +1,102 @@
+.recommendProduct-list-container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recommendProduct-item {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recommendProduct-thumbnail{
+    height: 94px;
+    width: 100px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.recommendProduct-thumbnail img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.sold-overlay {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.recommendProduct-details {
+    font-size: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendProduct-title {
+    font-size: 14px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.recommendProduct-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.recommendProduct-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: #999;
+    margin-top: 8px;
+}
+
+.loading-indicator,
+.no-more-items {
+    text-align: center;
+    font-size: 11px;
+    color: black;
+    padding: 16px 0;
+}
+
+/* 미디어 쿼리로 border 제거 */
+@media (max-width: 1200px) {
+    .recommendProduct-list-container{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .recommendProduct-item{
+        flex-direction: column;
+    }
+
+    .recommendProduct-thumbnail{
+        width: 100%;
+    }
+
+    .recommendProduct-thumbnail img {
+        width: 100%;
+    }
+}

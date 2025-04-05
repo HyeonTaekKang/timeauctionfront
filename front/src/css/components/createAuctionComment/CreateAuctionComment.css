@@ -1,0 +1,49 @@
+.create-auction-comment {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.comment-header{
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    letter-spacing: -1.8px;
+    padding-bottom: 10px
+}
+
+.create-auction-comment label {
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.create-auction-comment input {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.create-auction-comment button {
+    width: fit-content;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-auction-comment button:hover {
+    background-color: rgba(255, 85, 170, 0.5);
+}

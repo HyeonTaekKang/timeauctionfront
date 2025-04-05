@@ -1,0 +1,62 @@
+.waiting-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.waiting-message {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    /* border: 20px solid transparent; */
+    /* align-items: center; */
+    text-align: center;
+    display: flex;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 5px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(0deg, #ff55aa 100%, #ff69b4 100%);
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+.waiting-title {
+    font-size: 20px; /* 제목 크기 조정 */
+    font-weight: bold; /* 글씨 두껍게 */
+    color: #2c3e50; /* 제목 색상 */
+    margin-bottom: 15px; /* 마진 조정 */
+}
+
+.waiting-rank-label,
+.waiting-status,
+.waiting-note {
+    padding-top: 17px;
+    font-size: 14px; /* 폰트 크기 조정 */
+    color: #34495e; /* 텍스트 색상 */
+}
+
+.waiting-rank {
+    font-weight: bold;
+    font-size: 18px; /* 대기 순번 크기 조정 */
+    color: #e74c3c; /* 대기 순번 색상 */
+}
+
+.warning {
+    font-weight: normal; /* 글씨 두껍지 않게 */
+    font-size: 12px; /* 크기 작게 */
+    color: #7f8c8d; /* 회색으로 변경 */
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

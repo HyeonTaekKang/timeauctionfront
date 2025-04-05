@@ -1,0 +1,89 @@
+.full-screen-search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    z-index: 1000; /* 상위 레이어에 위치 */
+}
+
+.full-screen-search-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.full-screen-search-input {
+    width: 90%;
+    border-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+
+}
+
+.full-screen-search-history-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.recent-search-font{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.clear-all {
+    font-size: 13px;
+    background: transparent;
+    color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-all:hover {
+    color: white;
+}
+
+.search-history {
+    width: 99%;
+    margin: 30px 0px 0px 5px;
+    max-height: 50%;
+    overflow-y: auto;
+    flex-grow: 1; /* 남는 공간을 차지하도록 설정 */
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.full-screen-search-history-item{
+    display: flex;
+    gap: 8px;
+}
+
+.close-icon {
+    cursor: pointer;
+    color: lightgray;
+}
+
+.close-icon:hover {
+    color: red; /* X 아이콘에 마우스 오버 시 색상 변화 */
+}
+
+.no-history {
+    padding: 10px;
+    color: lightgray; /* 텍스트 색상 */
+    margin-top: 20px;
+}

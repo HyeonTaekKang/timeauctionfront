@@ -1,0 +1,125 @@
+.mySell-container{
+    padding: 30px;
+    /* border: 1px solid black; */
+    /* height: 25rem; */
+    /* max-width: 28rem; */
+    font-weight: 500;
+    top: 100%;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    background-color: #fff;
+}
+
+.mySellList-Icon{
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.mySell-list{
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+    flex: 1 1;
+    /* border-right: 1px solid black; */
+    /* padding: 20px; */
+    overflow-y: auto;
+}
+
+.noSell{
+    padding: 20px;
+}
+
+.loader{
+    padding: 20px;
+}
+
+/*.chat-room-list .chat-room-item {*/
+/*    padding: 10px;*/
+/*}*/
+
+.mySell-type-buttons {
+    display: flex;
+    justify-content: space-between; /* 버튼 사이의 간격 조정 */
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.mySell-type-button {
+    flex: 1; /* 동일한 비율로 공간 차지 */
+    padding: 10px; /* 버튼 크기 조정 */
+    border: 1px solid black; /* 버튼 테두리 설정 */
+    background-color: #fff; /* 배경색 하얀색 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+    transition: background-color 0.2s ease; /* 배경색 변화에 부드러운 전환 효과 추가 */
+    font-weight: 500; /* 글씨 두껍게 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+}
+
+.mySell-type-button:hover {
+    background-color: #f0f0f0; /* 마우스 오버 시 배경색 변경 */
+}
+
+/*.mySell-type-button:first-child {*/
+/*    border-top-left-radius: 0.6rem; !* 첫 번째 버튼 왼쪽 위 모서리 둥글게 *!*/
+/*}*/
+
+/*.mySell-type-button:last-child {*/
+/*    border-top-right-radius: 0.6rem; !* 두 번째 버튼 오른쪽 위 모서리 둥글게 *!*/
+/*}*/
+
+.mySell-type-button.selected {
+    background-color: #f0f0f0; /* 선택된 버튼의 배경색 */
+}
+
+/* hover 시 선택된 버튼의 배경색 변경 */
+.mySell-type-button.selected:hover {
+    background-color: #d0d0d0; /* 마우스 오버 시 선택된 버튼의 배경색 */
+}
+
+/*.chatRoomList-header{*/
+/*    display: none;*/
+/*}*/
+
+@media (max-width: 1200px) { /* 모바일 화면에 대한 미디어 쿼리 */
+
+    /*.chatRoomList-header{*/
+    /*    display: block;*/
+    /*    font-size: 20px;*/
+    /*    padding: 20px;*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: space-between;*/
+    /*}*/
+
+    /*#chatRoomList-chat-container {*/
+    /*    border: none;*/
+    /*    position: fixed; !* 화면 전체를 덮도록 고정 *!*/
+    /*    top: 0; !* 상단에 위치 *!*/
+    /*    left: 0; !* 좌측에 위치 *!*/
+    /*    width: 100vw; !* 전체 화면 너비 *!*/
+    /*    height: 100vh; !* 전체 화면 높이 *!*/
+    /*    overflow-y: auto; !* 세로 스크롤 가능 *!*/
+    /*    z-index: 4000; !* 다른 요소들보다 위에 위치하도록 설정 *!*/
+    /*}*/
+
+    /*.chatRoomList-chatIcon{*/
+    /*    display: flex;*/
+    /*    gap: 10px;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    /*.room-type-button:first-child {*/
+    /*    border-top-left-radius: 0;!* 첫 번째 버튼 왼쪽 위 모서리 둥글게 *!*/
+    /*}*/
+
+    /*.room-type-button:last-child {*/
+    /*    border-top-right-radius: 0; !* 두 번째 버튼 오른쪽 위 모서리 둥글게 *!*/
+    /*}*/
+}

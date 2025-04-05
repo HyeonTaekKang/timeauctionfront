@@ -1,0 +1,56 @@
+.side-navigation-container {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+    width: 72px;
+    height: 100vh;
+    padding: 0 2px;
+
+}
+
+.items .endpoint{
+    font-size: 11px;
+    font-weight: 100;
+    padding: 18px 0 18px;
+    color: black;
+    text-decoration: none;
+    outline: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    position: relative;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* 옅은 회색으로 설정 */
+    opacity: 0;
+    pointer-events: none; /* 네모칸이 마우스 이벤트를 가로채지 않도록 설정 */
+}
+
+.item:hover::before {
+    opacity: 1;
+}
+
+.items a {
+    display: block;
+    padding: 8px 0; /* 각 아이템의 위아래 여백을 원하는 크기로 조정할 수 있습니다. */
+    text-decoration: none;
+    color: #333; /* 원하는 글자색으로 변경할 수 있습니다. */
+}

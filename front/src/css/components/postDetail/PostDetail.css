@@ -1,0 +1,178 @@
+.post-detail-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.post-detail-header {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.post-detail-metadata {
+    color: #94969b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.post-detail-block{
+    display: flex;
+    gap: 15px;
+}
+
+.post-overflow-menu {
+    cursor: pointer;
+}
+
+.post-overflow-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.post-overflow-menu-container{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    width: 150px;
+    margin-top: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-detail-comment-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.post-detail-user-nickName{
+    font-weight: bold;
+}
+
+.post-detail-content {
+    padding-bottom: 150px;
+    font-size: 15px;
+    line-height: 1.6em;
+    width: 100%; /* 부모 너비에 맞춤 */
+    overflow: hidden; /* 넘치는 부분 숨김 */
+}
+
+.post-detail-title {
+    padding-bottom: 13px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.post-detail-createdAt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.post-detail-content img {
+    border-radius: 8px;
+    max-width: 100%; /* 반응형 이미지 */
+    height: auto;    /* 비율 유지 */
+    object-fit: contain; /* 내용 비율 유지 */
+}
+
+.post-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-timer-container {
+    margin-bottom: 30px;
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+.post-participate-button {
+    border-radius: 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 배경색 변화 효과 */
+}
+
+.post-participate-button:hover {
+    background-color: #db5a9e; /* 마우스 오버 시 색상 변화 */
+}
+
+.post-participate-button.disabled {
+    background-color: #f2f2f2;
+    color: #999;
+    cursor: not-allowed;
+    border-color: #ccc;
+    opacity: 0.6;
+}
+
+.post-comments {
+    margin-top: 60px;
+}
+
+/* 미디어 쿼리로 border 제거 */
+@media (max-width: 1200px) {
+    .post-comments {
+        display: none;
+    }
+
+    .post-detail-bottom-container {
+        margin-bottom: 60px;
+    }
+
+    .post-detail-container {
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .post-detail-left {
+        width: 100%;
+    }
+
+    .post-details-contents {
+        display: block;
+    }
+
+    .start-end-time-container {
+        display: block;
+    }
+
+    .post-start-end-time-highestBidAmount {
+        display: block;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .post-highestBidAmount {
+        padding-top: 16px;
+    }
+
+    .post-nickname {
+        padding-bottom: 20px;
+    }
+}
+
+/* 추가적인 미디어 쿼리 */
+@media (max-width: 768px) {
+    .post-detail-content img {
+        max-width: 100%; /* 작은 화면에 맞춰 이미지 조정 */
+        height: auto;    /* 비율 유지 */
+    }
+}

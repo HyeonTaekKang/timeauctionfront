@@ -1,0 +1,45 @@
+.auction-comment {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.comment-info {
+    flex: 1;
+}
+
+.nickname-time {
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nickname {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 12px;
+    color: #888;
+}
+
+.comment-content {
+    font-size: 14px;
+    color: #333;
+}
+
